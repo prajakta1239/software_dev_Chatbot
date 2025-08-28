@@ -1,1 +1,54 @@
-The project uses the free Skills Network-provided OpenAI APIs, along with Node.js and the Express.js framework.
+The project uses the free Skills Network-provided 
+OpenAI APIs, along with Node.js and the Express.js framework.
+
+
+Run node server.js  ------------------------------------------
+After run "node server.js" command on terminal----
+With Skills Network-provided 
+OpenAI APIs key run below url on browser:
+https://prajaktak137-3000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/
+
+----------------------------------------------------------------------------------------------
+With your own OpenAI API key: 
+To Run server: node server.js (terminal)
+port: 3000 
+http://localhost:3000/  (browser)
+http://localhost:3000/api
+http://localhost:3000/chat
+http://localhost:3000/api
+
+
+
+🚀 Options you have set API key or Without API demo response
+
+1. Use your own key (recommended if you want it to work locally and deploy later).
+
+Get it here: https://platform.openai.com/api-keys
+
+Put it in config.js or .env.
+
+2. Run without OpenAI (demo mode)
+If you just want to test the app flow (without real AI), you can make openai.js return a dummy response instead of calling the API:
+
+class OpenAIAPI {
+    static async generateResponse(userMessage) {
+        return `Echo: ${userMessage}`;  // just repeat the input
+    }
+}
+module.exports = { OpenAIAPI };
+
+-----------------------------------------------------------------------
+
+Steps for project: 
+
+mkdir software-dev-chatbot
+cd software-dev-chatbot
+npm init -y
+
+npm install express openai
+
+mkdir public
+touch index.html and other files 
+
+node server.js
+

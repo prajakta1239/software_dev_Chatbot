@@ -1,3 +1,14 @@
+//Demo response start
+class OpenAIAPI {
+    static async generateResponse(userMessage) {
+        return `Echo: ${userMessage}`;  // just repeat the input
+    }
+}
+module.exports = { OpenAIAPI };
+//Demo response end
+
+
+//IBM openai.js start
 class OpenAIAPI {
     static async generateResponse(userMessage, conversationHistory = []) {
         const apiKey = process.env.OPENAI_API_KEY;
@@ -27,10 +38,12 @@ class OpenAIAPI {
         }
     }
 }
-
 module.exports = { OpenAIAPI };
 
+//IBM openai.js end
 
+
+//My OpenAI API start
 // Create your own OpenAI API key and update OpenAI.js and config.js 
 // write your code below
 
