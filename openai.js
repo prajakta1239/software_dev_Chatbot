@@ -1,10 +1,10 @@
 //Demo response start
-class OpenAIAPI {
-    static async generateResponse(userMessage) {
-        return `Echo: ${userMessage}`;  // just repeat the input
-    }
-}
-module.exports = { OpenAIAPI };
+// class OpenAIAPI {
+//     static async generateResponse(userMessage) {
+//         return `Echo: ${userMessage}`;  // just repeat the input
+//     }
+// }
+// module.exports = { OpenAIAPI };
 //Demo response end
 
 
